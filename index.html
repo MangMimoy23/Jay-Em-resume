@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jay-Em C. Gueco - Resume</title>
+  <style>
+     {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #e1f5fe);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 20px;
+    }
+
+    .resume-container {
+      width: 100%;
+      max-width: 860px;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 20px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+      padding: 50px 40px;
+    }
+
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #0077b6;
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      color: #023e8a;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #0077b6;
+      margin-top: 40px;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #caf0f8;
+      padding-bottom: 6px;
+    }
+
+    p, ul {
+      color: #333;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .comment-form {
+      margin-top: 50px;
+      background-color: #f1f9fd;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 6px;
+      color: #023e8a;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      font-size: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: border 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #0077b6;
+      outline: none;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #0077b6;
+      color: white;
+      font-size: 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005f8d;
+    }
+
+    .button-secondary {
+      background-color: #adb5bd;
+      margin-left: 10px;
+    }
+
+    .button-secondary:hover {
+      background-color: #6c757d;
+    }
+
+     (max-width: 600px) {
+      .resume-container {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="resume-container">
+<img src="images/jm.jpg" alt="jm.jpg" class="profile-pic">
+  <h1>Jay-Em C. Gueco</h1>
+
+    <h2>About Me</h2>
+    <p>Hi, I am Jay-Em. I'm 20 years old. I enjoy exploring how things work, traveling, and spending time in nature.</p>
+
+    <h2>Education</h2>
+    <ul>
+      <li>Elementary School</li>
+      <li>ALS / Alternative Learning System</li>
+      <li>Senior High School</li>
+      <li>Currently 3rd Year College - BS in Information Technology</li>
+    </ul>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>Basic experience in mechanics and automotive</li>
+      <li>Troubleshooting mobile phones and computers</li>
+    </ul>
+
+    <h2>Projects or Experience</h2>
+    <ul>
+      <li>Creating carbon fiber parts for motorcycles</li>
+      <li>Fixing and troubleshooting gadgets</li>
+      <li>Motorcycle repair and maintenance experience</li>
+    </ul>
+
+    <h2>Contact Me</h2>
+    <p>Email or message me anytime.</p>
+
+  
+    <div class="comment-form">
+      <h2>Leave a Comment</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required maxlength="50">
+
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" required maxlength="1000" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+        <button type="button" class="button-secondary" onclick="window.print()">Download Resume</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
